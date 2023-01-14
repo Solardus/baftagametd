@@ -9,8 +9,13 @@
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>1qbpf9mtk1dqt</unique-id>
     <saved-with-version>28000</saved-with-version>
-    <used-plugins />
-    <used-behaviors />
+    <used-plugins>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -37,7 +42,30 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder />
+    <object-folder>
+        <object-type name="TiledBackground" sid="892931984020864">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Downloads\tower-defense-art\PNG\Default size\towerDefense_tile024.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="982368384415749">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="road" sid="470589821499605">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Downloads\tower-defense-art\Tilesheet\towerDefense_tilesheet.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Solid" sid="962241230038188">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="495833302551723">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+    </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
